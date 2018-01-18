@@ -1,0 +1,54 @@
+/*****************清除浮动***********************/
+.clearfix{
+
+}
+
+.clearfix::before,.clearfix::after{
+  content: "";
+  display: table;
+}
+
+.clearfix::after{
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+  clear: both;
+}
+
+/*****************placeholder样式***********************/
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+  //color:    #8e929a;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  //color:    #8e929a;
+  //opacity:  1;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  //color:    #8e929a;
+  //opacity:  1;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  //color:    #8e929a;
+}
+
+/*****************字体大小定义***********************/
+//.fs-72{
+//  font-size: 0.72rem;
+//}
+//
+//.fs-20{
+//  font-size: 0.2rem;
+//}
+//
+//.fs-28{
+//  font-size: 0.28rem;
+//}
+
+/*****************for weui***********************/
+html, body {
+  height: 100%;
+}
+/*****************for weui***********************/
