@@ -1,13 +1,50 @@
 @color-red: #f40;
+@content-bg:#28283C;
+@content-bg:#ccc;
+
+@footer-off-color:#5a5a87;
+@footer-on-color:#ff6060;
 
 body {
-  .weui-tab {
-    .weui-tab__bd {
-      color: @color-red;
-    }
+.first-page{
+  position: relative;
+  .content{
+    min-height:100vh;
+    padding-top: 0.64rem;
+    padding-bottom: 1.16rem;
+    background-color: @content-bg;
+  }
 
-    .weui-tabbar {
+  .footer{
+    ul{
+      display: flex;//设为Flex布局以后，子元素的float、clear和vertical-align属性将失效。
+      flex-direction: row;//子项延x轴排列
+      align-items: center;//子项y轴方向居中对齐
+      > li{
+        flex: 1;
+        // width: 50%;
+        // justify-content: flex-start;//子项在x轴的对齐方式
+        // flex-wrap: nowrap;//子项是否换行
+        a {
+          text-align: center;
+          display: block;
+          > img{
+            height: 0.37rem;
+            margin-bottom: .09rem;
+          }
+        }
 
+        p{
+          color: @footer-off-color;    
+          font-size: .24rem;        
+          height: .29rem;
+          line-height: .29rem;
+        }
+      }
+      .icon-on p{
+        color: @footer-on-color;
+      }
     }
   }
+}
 }
